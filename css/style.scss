@@ -1,0 +1,1085 @@
+@import "variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-family: $font-main;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.size_star_purple {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.color_star_puprle {
+  fill: rgba(108, 95, 188, 1);
+}
+
+.heart-size {
+  width: 2.4rem;
+  height: 2rem;
+}
+
+.twistedArrowMobile {
+  display: none;
+}
+
+.heart-position {
+  position: absolute;
+  left: 18rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+span {
+  color: $color-purple;
+}
+
+.container {
+  width: 125rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.main__customer-mobile {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15rem;
+  border-bottom: 1px solid rgba(203, 203, 203, 1);
+  .header__menu {
+    display: flex;
+    flex: 1 1 auto;
+    &-list {
+      display: flex;
+      gap: 7rem;
+    }
+    &-item {
+      transition: 1s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &-link {
+      color: $color-dark;
+      font-weight: 500;
+      &:hover {
+        color: $color-purple;
+      }
+    }
+  }
+  .header__buttons {
+    display: flex;
+    gap: 1rem;
+    &-login,
+    &-signUp {
+      transition: all 1s ease;
+      font-weight: 700;
+      border-radius: 1.8rem;
+      padding: 2rem;
+      font-size: 1.8rem;
+      border: none;
+      outline: none;
+      font-family: $font-main-2;
+      &:active {
+        transform: translateY(3rem);
+      }
+    }
+    &-login {
+      color: $color-dark;
+      background-color: transparent;
+      &:hover {
+        background-color: $color-purple;
+        color: $color-white;
+      }
+    }
+    &-signUp {
+      color: $color-white;
+      background-color: $color-purple;
+      &:hover {
+        background-color: $color-white;
+        color: $color-purple;
+        border: 1px solid $color-purple;
+      }
+    }
+  }
+}
+
+.main__container {
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-position: right 1rem top 4rem;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem auto;
+  gap: 1.5rem;
+  .main__text-users {
+    color: $color-dark;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    &::before {
+      content: "⎯⎯⎯⎯";
+      margin-right: 2rem;
+      color: $color-dark;
+      opacity: 0.4;
+    }
+  }
+  .main__title {
+    font-weight: 600;
+    width: 59rem;
+    letter-spacing: -0.3rem;
+    font-size: 7.5rem;
+  }
+  .main__text-content {
+    width: 52rem;
+    color: $color-dark;
+  }
+  .main__buttons {
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    &-getStart,
+    &-goPro {
+      transition: all 1s ease;
+      font-weight: 500;
+      border-radius: 1.3rem;
+      padding: 2rem 4rem;
+      border: none;
+      outline: none;
+      font-size: 1.6rem;
+    }
+    &-getStart {
+      background-color: $color-purple;
+      color: $color-white;
+      &:hover {
+        background-color: $color-white;
+        color: $color-purple;
+        border: 1px solid $color-purple;
+      }
+    }
+    &-goPro {
+      border: 1px solid $color-purple;
+      background-color: transparent;
+      color: $color-purple;
+      &:hover {
+        background-color: $color-purple;
+        color: $color-white;
+      }
+    }
+  }
+  .main__ratings {
+    height: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    &-title {
+      margin-top: 1rem;
+    }
+    &-stars {
+      margin-top: 0.8rem;
+    }
+    &-rating {
+      margin-top: 0.6rem;
+    }
+  }
+}
+
+.main__features {
+  background-image: url("/img/bandLeft-1.png"), url("/img/bandLeft-2.png"),
+    url("/img/bandRight-1.png"), url("/img/bandRight-2.png");
+  background-position: left, left, right, right;
+  background-repeat: no-repeat;
+  background-color: $color-purple;
+  &-content {
+    display: flex;
+    justify-content: center;
+    .item {
+      color: $color-white;
+      font-family: $font-main-3;
+      text-align: center;
+      padding: 0rem 4rem;
+      margin: 4rem 0rem;
+      border-left: 1px solid rgba(197, 197, 197, 0.15);
+      &-text {
+        margin-top: 2rem;
+        width: 21rem;
+        font-size: 1.4rem;
+        color: $color-blue-gray;
+        font-family: $font-main-2;
+      }
+    }
+    .item-top {
+      border: none;
+    }
+  }
+}
+
+.main__downloadApp-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 10rem 0;
+  border-bottom: 1px solid rgba(203, 203, 203, 0.8);
+  .main__downloadApp-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    width: 49rem;
+
+    .title {
+      width: 38rem;
+    }
+    .text {
+      color: $color-grey;
+      list-style-type: disc;
+      .item {
+        margin: 2rem 0 0 2rem;
+      }
+    }
+    .button {
+      cursor: pointer;
+      border-radius: 1.5rem;
+      width: 18.6rem;
+      height: 6.3rem;
+      gap: 1.5rem;
+      font-size: 1.8rem;
+      font-family: $font-main;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-purple;
+      border: none;
+      color: $color-white;
+      outline: none;
+      transition: 1s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .twistedArrow {
+      position: absolute;
+      top: 60rem;
+      right: 25rem;
+    }
+  }
+}
+
+.main__sliders__restaurants {
+  &-container {
+    border-bottom: 1px solid rgba(203, 203, 203, 1);
+    padding: 8rem 0rem;
+    .main__sliders__restaurants-title {
+      font-size: 4.5rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .swiper {
+      padding: 4rem 0rem;
+      width: 100%;
+      height: 100%;
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          .item {
+            border-radius: 3rem;
+            box-shadow: 0.6rem 7.1rem 3.5rem 0rem rgba(229, 229, 229, 0.7);
+            width: 39.5rem;
+            &__img {
+              border-radius: 3rem 3rem 0rem 0rem;
+            }
+            &__info {
+              padding: 1rem 3rem;
+              &-title {
+                font-size: 1.2rem;
+                font-weight: 400;
+                background: $color-lightGold;
+                color: $color-yellow;
+                border-radius: 0.5rem;
+                padding: 0.5rem 0.8rem;
+              }
+              .red {
+                color: $color-red;
+                background: $color-salmon;
+              }
+              &-text {
+                font-weight: 600;
+                font-size: 2.5rem;
+              }
+              &-rating {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .time,
+                .rating {
+                  font-family: $font-main-4;
+                  color: $color-dark-3;
+                  font-size: 1.9rem;
+                }
+                .bookmark {
+                  margin-left: auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 4rem;
+                  height: 4rem;
+                  background: $color-purple-2;
+                  border-radius: 2rem;
+                  cursor: pointer;
+                  transition: 1s;
+                  &:hover {
+                    transform: scale(1.2);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main__sliders__dishes {
+  &-container {
+    border-bottom: 1px solid rgba(203, 203, 203, 1);
+    padding: 8rem 0rem;
+  }
+  &-title {
+    text-align: center;
+  }
+  .swiper {
+    padding: 4rem 0rem;
+  }
+  .swiper-slide {
+    width: 22.4rem !important;
+    margin: 0rem 3rem !important;
+  }
+  .item {
+    width: 22.4rem;
+    box-shadow: 6.85px 82.18px 41.09px 0px rgba(229, 229, 229, 1);
+    border-radius: 3rem;
+    position: relative;
+    img {
+      width: 20rem;
+      height: 20.7rem;
+    }
+    .red {
+      color: $color-red;
+      background: $color-salmon;
+    }
+    .green {
+      color: $color-green;
+      background: rgb(184, 252, 211);
+    }
+    &__info {
+      width: 22.4rem;
+      padding: 1.5rem;
+      &-title {
+        font-size: 1.2rem;
+        font-weight: 400;
+        background: $color-lightGold;
+        color: $color-yellow;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.8rem;
+      }
+      &-text {
+        font-weight: 600;
+        font-size: 2.5rem;
+      }
+      &-rating {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .time,
+        .rating {
+          font-family: $font-main-4;
+          color: $color-dark-3;
+          font-size: 1.9rem;
+        }
+      }
+    }
+    &-price {
+      gap: 3rem;
+      display: flex;
+      justify-content: space-between;
+      .price {
+        font-family: $font-main-4;
+        font-weight: 700;
+        font-size: 2.6rem;
+        span {
+          color: $color-dark-3;
+          font-size: 1.9rem;
+        }
+      }
+      .button {
+        text-align: center;
+        background: rgba(50, 49, 66, 1);
+        outline: none;
+        border: none;
+        width: 4.4rem;
+        height: 4rem;
+        border-radius: 0.9rem;
+        color: $color-white;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.main__control__purchases {
+  &-container {
+    border-bottom: 1px solid rgba(203, 203, 203, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0rem;
+  }
+  &-text {
+    .title {
+      width: 40rem;
+      margin-bottom: 3rem;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .card {
+        padding: 0.7rem;
+        border-radius: 1.2rem;
+        box-shadow: 5px 5px 5px 5px rgb(17, 16, 16, 0.1);
+        display: flex;
+        width: 34.5rem;
+        height: 8.8rem;
+        align-items: center;
+        justify-content: space-around;
+        img {
+          width: 7.7rem;
+          height: 8rem;
+        }
+        .info {
+          .title_name {
+            font-size: 1.9rem;
+          }
+          .status {
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+        .time {
+          color: rgba(172, 173, 185, 1);
+          font-size: 1.3rem;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+  &-card {
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    padding: 5rem;
+    box-shadow: 5px 5px 5px 5px rgb(17, 16, 16, 0.1);
+    border-radius: 2.5rem;
+    gap: 3rem;
+    .card-info {
+      display: flex;
+      align-items: center;
+      gap: 12rem;
+      h1 {
+        font-family: $font-main-4;
+        font-weight: 800;
+      }
+      label {
+        font-size: 1.8rem;
+        font-family: $font-main-4;
+        font-weight: 600;
+      }
+    }
+    .card-item {
+      padding: 3rem;
+      border: 1px solid rgba(237, 242, 247, 1);
+      border-radius: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .info {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        .icon {
+          width: 5rem;
+          height: 5rem;
+          background: rgba(244, 240, 255, 1);
+          border-radius: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .wallet {
+          background: rgba(242, 253, 246, 1);
+        }
+        .text {
+          font-family: $font-main-4;
+          h1 {
+            font-weight: 800;
+            font-size: 1.8rem;
+          }
+          p {
+            font-size: 1.5rem;
+            color: rgba(160, 174, 192, 1);
+          }
+        }
+        .price {
+          font-weight: 800;
+          font-family: $font-main-4;
+          font-size: 2.2rem;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+.main__customer {
+  &-container {
+    padding: 8rem 0rem;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  &-items {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-around;
+    &__main {
+      width: 52.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      background-color: $color-white;
+      border-radius: 3rem;
+      padding: 3rem;
+      box-shadow: 5px 5px 5px 5px rgb(17, 16, 16, 0.1);
+      .info__client {
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+        &-squiggle {
+          margin-left: auto;
+        }
+        &-img {
+          border-radius: 50%;
+        }
+        &-initials {
+          .name {
+            font-weight: 500;
+            font-size: 2.1rem;
+          }
+          .time {
+            margin-top: 0.7rem;
+            font-family: $font-main-5;
+            color: $color-dark;
+          }
+        }
+      }
+      .info__text {
+        font-style: italic;
+        color: $color-dark;
+      }
+    }
+    &__scroll {
+      .scroll-x {
+        padding-bottom: 10rem;
+        width: 59rem;
+        display: flex;
+        overflow-x: auto;
+        gap: 3rem;
+        &::-webkit-scrollbar {
+          width: auto;
+          scrollbar-width: thin;
+        }
+        &::-webkit-scrollbar-track {
+          background: $color-purple-2;
+          border-radius: 3rem;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: $color-purple;
+          border-radius: 3rem;
+        }
+        scroll-page {
+          .item {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 52.8rem;
+            padding: 3rem;
+            background-color: $color-white;
+            border-radius: 3rem;
+            padding: 3rem;
+            box-shadow: 5px 5px 5px 5px rgb(17, 16, 16, 0.1);
+          }
+        }
+      }
+    }
+  }
+}
+.main__subscribe {
+  &-container {
+    padding: 8rem 0rem 12rem 0;
+  }
+  &-authorize {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 3rem;
+    background-color: $color-purple;
+    height: 28rem;
+    background-image: url("/img/back.png");
+    .info {
+      margin-left: 6rem;
+      h1 {
+        font-size: 7rem;
+        color: $color-white;
+      }
+      .button {
+        display: flex;
+        justify-content: space-between;
+        width: 43rem;
+        box-shadow: 0px 7.25px 45.33px 0px rgba(0, 0, 0, 0.1);
+        background-color: $color-white;
+        border-radius: 1rem;
+        height: 6.8rem;
+        input,
+        button {
+          outline: none;
+          border: none;
+        }
+        button {
+          cursor: pointer;
+          background-color: $color-purple;
+          margin: 1rem 1rem 1rem 0rem;
+          border-radius: 1rem;
+          padding: 2rem;
+          display: flex;
+          align-items: center;
+          color: $color-white;
+          font-size: 1.4rem;
+          font-family: $font-main;
+          line-height: 2.2rem;
+          letter-spacing: 3%;
+        }
+        input {
+          background-color: transparent;
+          border-radius: 2rem;
+          padding: 2rem;
+          font-family: $font-main;
+          color: $color-dark;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    img {
+      width: 27rem;
+      height: 27rem;
+      position: absolute;
+      top: 8rem;
+      left: 80rem;
+    }
+  }
+}
+
+footer {
+  background: rgba(234, 234, 234, 1);
+  .footer-container {
+    padding: 8rem 0rem;
+  }
+
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    .item_link {
+      text-decoration: none;
+      display: flex;
+      gap: 6rem;
+      a {
+        color: $color-dark;
+      }
+    }
+  }
+  .footer-bottom {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-family: $font-main-2;
+      font-weight: 500;
+      font-size: 1.7rem;
+      color: $color-dark;
+    }
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+}
+
+.main__downloadApp-mobile {
+  display: none;
+}
+
+.sign-up {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  position: absolute;
+  .sign-up__wrapper {
+    border: 1px solid black;
+    width: 90rem;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    .sign-up__authorize {
+      background-color: white;
+      .close {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      padding: 1.5rem;
+      width: 50%;
+      .sign-up-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .title {
+          font-size: 2.5rem;
+          font-weight: 600;
+          text-align: center;
+        }
+        .btn-socials {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          button {
+            img {
+            }
+            cursor: pointer;
+            width: 14rem;
+            height: 4.3rem;
+            border: none;
+            outline: none;
+            border-radius: 1.3rem;
+          }
+        }
+        .wordPrefix {
+          text-align: center;
+          font-weight: 500;
+          color: rgba(0, 90, 100, 0.35);
+        }
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+
+          .inputContainer {
+            position: relative;
+          }
+          .fullname {
+            &::before {
+              position: absolute;
+              top: 2rem;
+              left: 1.5rem;
+              background-size: cover;
+              content: "";
+              background-image: url("/img/user.png");
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+          .email {
+            &::before {
+              position: absolute;
+              top: 2rem;
+              left: 1.5rem;
+              background-size: cover;
+              content: "";
+              background-image: url("/img/email.png");
+              width: 2.5rem;
+              height: 2rem;
+            }
+          }
+          .pass {
+            &::before {
+              position: absolute;
+              top: 2rem;
+              left: 1.5rem;
+              background-size: cover;
+              content: "";
+              background-image: url("/img/letter.png");
+              width: 2rem;
+              height: 2.4rem;
+            }
+          }
+          input {
+            width: 100%;
+            background: rgba(245, 245, 245, 1);
+            border: none;
+            outline: none;
+            border-radius: 1.4rem;
+            padding: 2rem 5rem;
+            color: $color-dark;
+            opacity: 0.5;
+            font-weight: 600;
+            font-family: $font-main;
+          }
+        }
+        .sign {
+          background: rgba(108, 95, 188, 1);
+          border: none;
+          outline: none;
+          color: $color-white;
+          border-radius: 1.5rem;
+          width: 27.8rem;
+          height: 6rem;
+          text-align: center;
+          font-weight: 600;
+          font-family: $font-main;
+        }
+        .text {
+          font-size: 1.5rem;
+          a {
+            font-weight: 800;
+            color: $color-purple;
+          }
+        }
+      }
+      .privacyText {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        color: rgba(113, 128, 150, 1);
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .sign-up__content {
+      padding: 3rem;
+      gap: 2rem;
+      width: 50%;
+      background-color: $color-purple;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1,
+      p {
+        color: $color-white;
+        font-size: 3rem;
+        font-weight: 800;
+        font-family: $font-main-4;
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.sign-in {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  .sign-in__wrapper {
+    border: 1px solid black;
+    width: 90rem;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    .sign-in__authorize {
+      background-color: white;
+      .close {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      padding: 1.5rem;
+      width: 50%;
+      .sign-in-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .title {
+          font-size: 2.5rem;
+          font-weight: 600;
+          text-align: center;
+        }
+        .btn-socials {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          button {
+            img {
+            }
+            cursor: pointer;
+            width: 14rem;
+            height: 4.3rem;
+            border: none;
+            outline: none;
+            border-radius: 1.3rem;
+          }
+        }
+        .wordPrefix {
+          text-align: center;
+          font-weight: 500;
+          color: rgba(0, 90, 100, 0.35);
+        }
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+
+          .inputContainer {
+            position: relative;
+          }
+          .fullname {
+            &::before {
+              position: absolute;
+              top: 2rem;
+              left: 1.5rem;
+              background-size: cover;
+              content: "";
+              background-image: url("/img/user.png");
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+          .email {
+            &::before {
+              position: absolute;
+              top: 2rem;
+              left: 1.5rem;
+              background-size: cover;
+              content: "";
+              background-image: url("/img/email.png");
+              width: 2.5rem;
+              height: 2rem;
+            }
+          }
+          .pass {
+            &::before {
+              position: absolute;
+              top: 2rem;
+              left: 1.5rem;
+              background-size: cover;
+              content: "";
+              background-image: url("/img/letter.png");
+              width: 2rem;
+              height: 2.4rem;
+            }
+          }
+          input {
+            width: 100%;
+            background: rgba(245, 245, 245, 1);
+            border: none;
+            outline: none;
+            border-radius: 1.4rem;
+            padding: 2rem 5rem;
+            color: $color-dark;
+            opacity: 0.5;
+            font-weight: 600;
+            font-family: $font-main;
+          }
+        }
+        .sign {
+          background: rgba(108, 95, 188, 1);
+          border: none;
+          outline: none;
+          color: $color-white;
+          border-radius: 1.5rem;
+          width: 27.8rem;
+          height: 6rem;
+          text-align: center;
+          font-weight: 600;
+          font-family: $font-main;
+        }
+        .text {
+          font-size: 1.5rem;
+          a {
+            font-weight: 800;
+            color: $color-purple;
+          }
+        }
+      }
+      .privacyText {
+        font-size: 1.5rem;
+        margin-top: 4rem;
+        color: rgba(113, 128, 150, 1);
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .sign-in__content {
+      padding: 3rem;
+      gap: 2rem;
+      width: 50%;
+      background-color: $color-purple;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1,
+      p {
+        color: $color-white;
+        font-size: 3rem;
+        font-weight: 800;
+        font-family: $font-main-4;
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+}

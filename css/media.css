@@ -1,0 +1,221 @@
+@media screen and (max-width: 1070px) {
+  .container {
+    width: 90rem;
+  }
+  .main__customer-items__main {
+    width: 40rem;
+  }
+  .main__customer-items__scroll {
+    width: 40rem;
+  }
+  .main__customer-items__scroll .scroll-x {
+    width: 43rem;
+    padding-bottom: 14rem;
+  }
+  .main__control__purchases-card {
+    width: 40rem;
+  }
+  .main__control__purchases-card .card-info {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .main__control__purchases-card .card-info h1 {
+    font-size: 3rem;
+  }
+  .main__control__purchases-card .card-info form {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__sliders__restaurants-container .swiper .swiper-wrapper {
+    gap: 12rem;
+  }
+  .main__container .main__ratings {
+    margin-top: auto;
+  }
+  .header__container {
+    -moz-column-gap: 8rem;
+         column-gap: 8rem;
+  }
+  .main__subscribe-authorize img {
+    left: 60rem;
+  }
+  .main__downloadApp-container .main__downloadApp-content .twistedArrow {
+    right: 20rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 51.6rem;
+  }
+  .header__menu,
+.header__buttons {
+    display: none !important;
+  }
+  .hamburger {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    color: black;
+  }
+  .main__container {
+    background: none;
+    align-items: center;
+  }
+  .main__container .main__text-users {
+    color: black;
+    opacity: 1;
+  }
+  .main__container .main__title {
+    width: 100%;
+    text-align: center;
+  }
+  .main__container .main__text-content {
+    width: 100%;
+    text-align: center;
+  }
+  .main__container .main__ratings {
+    margin: 0 auto;
+  }
+  .main__features {
+    background-color: rgb(108, 95, 188);
+    background-image: url("/img/bandLeftMob-1.png"), url("/img/bandLeftMob-2.png"), url("/img/bandRightMob-1.png"), url("/img/bandRightMob-2.png");
+    background-position: left 0rem, left 0rem, right bottom 0rem, right bottom 0rem;
+  }
+  .main__features-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__features-content .item {
+    padding: 0;
+    margin: 0;
+    padding: 4rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.15);
+  }
+  .main__features-content .item-bottom {
+    border: none;
+  }
+  .main__downloadApp {
+    display: none;
+  }
+  .main__downloadApp-mobile {
+    display: block;
+  }
+  .main__downloadApp-mobile .main__downloadApp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+  }
+  .main__downloadApp-mobile .main__downloadApp-container .main__downloadApp-content .twistedArrow {
+    transform: rotate(101deg);
+    right: 33rem;
+    top: 54rem;
+  }
+  .main__downloadApp-mobile .main__downloadApp-container .main__downloadApp-content .title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .main__downloadApp-mobile .main__downloadApp-container .main__downloadApp-content .button {
+    margin: 0 auto;
+  }
+  .main__downloadApp-mobile .main__downloadApp-container .main__downloadApp-img {
+    height: 100%;
+    margin: 0 auto;
+  }
+  .main__sliders__restaurants .main__sliders__restaurants-container .main__sliders__restaurants-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__sliders__restaurants .main__sliders__restaurants-container .swiper-wrapper {
+    width: 39.6rem;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .main__sliders__dishes .main__sliders__dishes-container .main__sliders__dishes-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__sliders__dishes .main__sliders__dishes-container .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__sliders__dishes .main__sliders__dishes-container .swiper-wrapper {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 24rem 25.5rem;
+    gap: 2rem;
+  }
+  .main__control__purchases .main__control__purchases-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+  }
+  .main__control__purchases .main__control__purchases-container .main__control__purchases-text .cards {
+    position: relative;
+  }
+  .main__control__purchases .main__control__purchases-container .main__control__purchases-card {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .main__control__purchases .twistedArrowMobile {
+    display: block;
+    position: absolute;
+    transform: rotate(263deg);
+    top: 30rem;
+    left: 35rem;
+  }
+  .main__customer {
+    display: none;
+  }
+  .main__customer-mobile {
+    display: block;
+  }
+  .main__customer-mobile .main__customer-container .main__customer-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__customer-mobile .scroll-x .item {
+    height: 38rem;
+  }
+  .main__subscribe .main__subscribe-container .main__subscribe-authorize {
+    height: 30rem;
+    margin-bottom: 20rem;
+    position: relative;
+  }
+  .main__subscribe .main__subscribe-container .main__subscribe-authorize img {
+    position: absolute;
+    left: 14rem;
+    top: 24rem;
+  }
+  footer .footer-container {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer-container .footer-top {
+    border: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 6rem;
+    padding: 0;
+  }
+  footer .footer-container .footer-top .item_link {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  footer .footer-container .footer-bottom {
+    padding: 0;
+    flex-direction: column;
+  }
+  footer .footer-container .footer-bottom p {
+    display: none;
+  }
+}/*# sourceMappingURL=media.css.map */

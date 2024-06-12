@@ -1,0 +1,1043 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.size_star_purple {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.color_star_puprle {
+  fill: rgb(108, 95, 188);
+}
+
+.heart-size {
+  width: 2.4rem;
+  height: 2rem;
+}
+
+.twistedArrowMobile {
+  display: none;
+}
+
+.heart-position {
+  position: absolute;
+  left: 18rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+span {
+  color: rgb(108, 95, 188);
+}
+
+.container {
+  width: 125rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+
+.main__customer-mobile {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 15rem;
+       column-gap: 15rem;
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+.header__container .header__menu {
+  display: flex;
+  flex: 1 1 auto;
+}
+.header__container .header__menu-list {
+  display: flex;
+  gap: 7rem;
+}
+.header__container .header__menu-item {
+  transition: 1s;
+}
+.header__container .header__menu-item:hover {
+  transform: scale(1.1);
+}
+.header__container .header__menu-link {
+  color: rgb(96, 96, 96);
+  font-weight: 500;
+}
+.header__container .header__menu-link:hover {
+  color: rgb(108, 95, 188);
+}
+.header__container .header__buttons {
+  display: flex;
+  gap: 1rem;
+}
+.header__container .header__buttons-login, .header__container .header__buttons-signUp {
+  transition: all 1s ease;
+  font-weight: 700;
+  border-radius: 1.8rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+.header__container .header__buttons-login:active, .header__container .header__buttons-signUp:active {
+  transform: translateY(3rem);
+}
+.header__container .header__buttons-login {
+  color: rgb(96, 96, 96);
+  background-color: transparent;
+}
+.header__container .header__buttons-login:hover {
+  background-color: rgb(108, 95, 188);
+  color: rgb(249, 249, 249);
+}
+.header__container .header__buttons-signUp {
+  color: rgb(249, 249, 249);
+  background-color: rgb(108, 95, 188);
+}
+.header__container .header__buttons-signUp:hover {
+  background-color: rgb(249, 249, 249);
+  color: rgb(108, 95, 188);
+  border: 1px solid rgb(108, 95, 188);
+}
+
+.main__container {
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-position: right 1rem top 4rem;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem auto;
+  gap: 1.5rem;
+}
+.main__container .main__text-users {
+  color: rgb(96, 96, 96);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+.main__container .main__text-users::before {
+  content: "⎯⎯⎯⎯";
+  margin-right: 2rem;
+  color: rgb(96, 96, 96);
+  opacity: 0.4;
+}
+.main__container .main__title {
+  font-weight: 600;
+  width: 59rem;
+  letter-spacing: -0.3rem;
+  font-size: 7.5rem;
+}
+.main__container .main__text-content {
+  width: 52rem;
+  color: rgb(96, 96, 96);
+}
+.main__container .main__buttons {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+.main__container .main__buttons-getStart, .main__container .main__buttons-goPro {
+  transition: all 1s ease;
+  font-weight: 500;
+  border-radius: 1.3rem;
+  padding: 2rem 4rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+}
+.main__container .main__buttons-getStart {
+  background-color: rgb(108, 95, 188);
+  color: rgb(249, 249, 249);
+}
+.main__container .main__buttons-getStart:hover {
+  background-color: rgb(249, 249, 249);
+  color: rgb(108, 95, 188);
+  border: 1px solid rgb(108, 95, 188);
+}
+.main__container .main__buttons-goPro {
+  border: 1px solid rgb(108, 95, 188);
+  background-color: transparent;
+  color: rgb(108, 95, 188);
+}
+.main__container .main__buttons-goPro:hover {
+  background-color: rgb(108, 95, 188);
+  color: rgb(249, 249, 249);
+}
+.main__container .main__ratings {
+  height: 3rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.main__container .main__ratings-title {
+  margin-top: 1rem;
+}
+.main__container .main__ratings-stars {
+  margin-top: 0.8rem;
+}
+.main__container .main__ratings-rating {
+  margin-top: 0.6rem;
+}
+
+.main__features {
+  background-image: url("/img/bandLeft-1.png"), url("/img/bandLeft-2.png"), url("/img/bandRight-1.png"), url("/img/bandRight-2.png");
+  background-position: left, left, right, right;
+  background-repeat: no-repeat;
+  background-color: rgb(108, 95, 188);
+}
+.main__features-content {
+  display: flex;
+  justify-content: center;
+}
+.main__features-content .item {
+  color: rgb(249, 249, 249);
+  font-family: "Public Sans", sans-serif;
+  text-align: center;
+  padding: 0rem 4rem;
+  margin: 4rem 0rem;
+  border-left: 1px solid rgba(197, 197, 197, 0.15);
+}
+.main__features-content .item-text {
+  margin-top: 2rem;
+  width: 21rem;
+  font-size: 1.4rem;
+  color: rgb(203, 213, 225);
+  font-family: "Inter", sans-serif;
+}
+.main__features-content .item-top {
+  border: none;
+}
+
+.main__downloadApp-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 10rem 0;
+  border-bottom: 1px solid rgba(203, 203, 203, 0.8);
+}
+.main__downloadApp-container .main__downloadApp-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  width: 49rem;
+}
+.main__downloadApp-container .main__downloadApp-content .title {
+  width: 38rem;
+}
+.main__downloadApp-container .main__downloadApp-content .text {
+  color: rgb(103, 103, 103);
+  list-style-type: disc;
+}
+.main__downloadApp-container .main__downloadApp-content .text .item {
+  margin: 2rem 0 0 2rem;
+}
+.main__downloadApp-container .main__downloadApp-content .button {
+  cursor: pointer;
+  border-radius: 1.5rem;
+  width: 18.6rem;
+  height: 6.3rem;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(108, 95, 188);
+  border: none;
+  color: rgb(249, 249, 249);
+  outline: none;
+  transition: 1s;
+}
+.main__downloadApp-container .main__downloadApp-content .button:hover {
+  transform: scale(1.1);
+}
+.main__downloadApp-container .main__downloadApp-content .twistedArrow {
+  position: absolute;
+  top: 60rem;
+  right: 25rem;
+}
+
+.main__sliders__restaurants-container {
+  border-bottom: 1px solid rgb(203, 203, 203);
+  padding: 8rem 0rem;
+}
+.main__sliders__restaurants-container .main__sliders__restaurants-title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.main__sliders__restaurants-container .swiper {
+  padding: 4rem 0rem;
+  width: 100%;
+  height: 100%;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item {
+  border-radius: 3rem;
+  box-shadow: 0.6rem 7.1rem 3.5rem 0rem rgba(229, 229, 229, 0.7);
+  width: 39.5rem;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__img {
+  border-radius: 3rem 3rem 0rem 0rem;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info {
+  padding: 1rem 3rem;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  background: rgb(247, 237, 208);
+  color: rgb(218, 163, 26);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info .red {
+  color: rgb(251, 71, 29);
+  background: rgb(247, 197, 186);
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info-text {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info-rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info-rating .time,
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info-rating .rating {
+  font-family: "Manrope", sans-serif;
+  color: rgb(142, 151, 166);
+  font-size: 1.9rem;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info-rating .bookmark {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: rgb(219, 217, 238);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 1s;
+}
+.main__sliders__restaurants-container .swiper .swiper-wrapper .swiper-slide .item__info-rating .bookmark:hover {
+  transform: scale(1.2);
+}
+
+.main__sliders__dishes-container {
+  border-bottom: 1px solid rgb(203, 203, 203);
+  padding: 8rem 0rem;
+}
+.main__sliders__dishes-title {
+  text-align: center;
+}
+.main__sliders__dishes .swiper {
+  padding: 4rem 0rem;
+}
+.main__sliders__dishes .swiper-slide {
+  width: 22.4rem !important;
+  margin: 0rem 3rem !important;
+}
+.main__sliders__dishes .item {
+  width: 22.4rem;
+  box-shadow: 6.85px 82.18px 41.09px 0px rgb(229, 229, 229);
+  border-radius: 3rem;
+  position: relative;
+}
+.main__sliders__dishes .item img {
+  width: 20rem;
+  height: 20.7rem;
+}
+.main__sliders__dishes .item .red {
+  color: rgb(251, 71, 29);
+  background: rgb(247, 197, 186);
+}
+.main__sliders__dishes .item .green {
+  color: rgb(48, 157, 91);
+  background: rgb(184, 252, 211);
+}
+.main__sliders__dishes .item__info {
+  width: 22.4rem;
+  padding: 1.5rem;
+}
+.main__sliders__dishes .item__info-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  background: rgb(247, 237, 208);
+  color: rgb(218, 163, 26);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+}
+.main__sliders__dishes .item__info-text {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.main__sliders__dishes .item__info-rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main__sliders__dishes .item__info-rating .time,
+.main__sliders__dishes .item__info-rating .rating {
+  font-family: "Manrope", sans-serif;
+  color: rgb(142, 151, 166);
+  font-size: 1.9rem;
+}
+.main__sliders__dishes .item-price {
+  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main__sliders__dishes .item-price .price {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.main__sliders__dishes .item-price .price span {
+  color: rgb(142, 151, 166);
+  font-size: 1.9rem;
+}
+.main__sliders__dishes .item-price .button {
+  text-align: center;
+  background: rgb(50, 49, 66);
+  outline: none;
+  border: none;
+  width: 4.4rem;
+  height: 4rem;
+  border-radius: 0.9rem;
+  color: rgb(249, 249, 249);
+  font-size: 3rem;
+}
+
+.main__control__purchases-container {
+  border-bottom: 1px solid rgb(203, 203, 203);
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0rem;
+}
+.main__control__purchases-text .title {
+  width: 40rem;
+  margin-bottom: 3rem;
+}
+.main__control__purchases-text .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__control__purchases-text .cards .card {
+  padding: 0.7rem;
+  border-radius: 1.2rem;
+  box-shadow: 5px 5px 5px 5px rgba(17, 16, 16, 0.1);
+  display: flex;
+  width: 34.5rem;
+  height: 8.8rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.main__control__purchases-text .cards .card img {
+  width: 7.7rem;
+  height: 8rem;
+}
+.main__control__purchases-text .cards .card .info .title_name {
+  font-size: 1.9rem;
+}
+.main__control__purchases-text .cards .card .info .status {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.main__control__purchases-text .cards .card .time {
+  color: rgb(172, 173, 185);
+  font-size: 1.3rem;
+  align-self: flex-end;
+}
+.main__control__purchases-card {
+  padding: 5rem;
+  box-shadow: 5px 5px 5px 5px rgba(17, 16, 16, 0.1);
+  border-radius: 2.5rem;
+  gap: 3rem;
+}
+.main__control__purchases-card .card {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main__control__purchases-card .card-info {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+}
+.main__control__purchases-card .card-info h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+.main__control__purchases-card .card-info label {
+  font-size: 1.8rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
+.main__control__purchases-card .card-item {
+  padding: 3rem;
+  border: 1px solid rgb(237, 242, 247);
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__control__purchases-card .card-item .info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.main__control__purchases-card .card-item .info .icon {
+  width: 5rem;
+  height: 5rem;
+  background: rgb(244, 240, 255);
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__control__purchases-card .card-item .info .wallet {
+  background: rgb(242, 253, 246);
+}
+.main__control__purchases-card .card-item .info .text {
+  font-family: "Manrope", sans-serif;
+}
+.main__control__purchases-card .card-item .info .text h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.main__control__purchases-card .card-item .info .text p {
+  font-size: 1.5rem;
+  color: rgb(160, 174, 192);
+}
+.main__control__purchases-card .card-item .info .price {
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+  font-size: 2.2rem;
+  margin-left: auto;
+}
+
+.main__customer-container {
+  padding: 8rem 0rem;
+}
+.main__customer-title {
+  font-weight: 600;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.main__customer-items {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+.main__customer-items__main {
+  width: 52.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgb(249, 249, 249);
+  border-radius: 3rem;
+  padding: 3rem;
+  box-shadow: 5px 5px 5px 5px rgba(17, 16, 16, 0.1);
+}
+.main__customer-items__main .info__client {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+.main__customer-items__main .info__client-squiggle {
+  margin-left: auto;
+}
+.main__customer-items__main .info__client-img {
+  border-radius: 50%;
+}
+.main__customer-items__main .info__client-initials .name {
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+.main__customer-items__main .info__client-initials .time {
+  margin-top: 0.7rem;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(96, 96, 96);
+}
+.main__customer-items__main .info__text {
+  font-style: italic;
+  color: rgb(96, 96, 96);
+}
+.main__customer-items__scroll .scroll-x {
+  padding-bottom: 10rem;
+  width: 59rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 3rem;
+}
+.main__customer-items__scroll .scroll-x::-webkit-scrollbar {
+  width: auto;
+  scrollbar-width: thin;
+}
+.main__customer-items__scroll .scroll-x::-webkit-scrollbar-track {
+  background: rgb(219, 217, 238);
+  border-radius: 3rem;
+}
+.main__customer-items__scroll .scroll-x::-webkit-scrollbar-thumb {
+  background: rgb(108, 95, 188);
+  border-radius: 3rem;
+}
+.main__customer-items__scroll .scroll-x scroll-page .item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 52.8rem;
+  padding: 3rem;
+  background-color: rgb(249, 249, 249);
+  border-radius: 3rem;
+  padding: 3rem;
+  box-shadow: 5px 5px 5px 5px rgba(17, 16, 16, 0.1);
+}
+
+.main__subscribe-container {
+  padding: 8rem 0rem 12rem 0;
+}
+.main__subscribe-authorize {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 3rem;
+  background-color: rgb(108, 95, 188);
+  height: 28rem;
+  background-image: url("/img/back.png");
+}
+.main__subscribe-authorize .info {
+  margin-left: 6rem;
+}
+.main__subscribe-authorize .info h1 {
+  font-size: 7rem;
+  color: rgb(249, 249, 249);
+}
+.main__subscribe-authorize .info .button {
+  display: flex;
+  justify-content: space-between;
+  width: 43rem;
+  box-shadow: 0px 7.25px 45.33px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(249, 249, 249);
+  border-radius: 1rem;
+  height: 6.8rem;
+}
+.main__subscribe-authorize .info .button input,
+.main__subscribe-authorize .info .button button {
+  outline: none;
+  border: none;
+}
+.main__subscribe-authorize .info .button button {
+  cursor: pointer;
+  background-color: rgb(108, 95, 188);
+  margin: 1rem 1rem 1rem 0rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  color: rgb(249, 249, 249);
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 2.2rem;
+  letter-spacing: 3%;
+}
+.main__subscribe-authorize .info .button input {
+  background-color: transparent;
+  border-radius: 2rem;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(96, 96, 96);
+  font-size: 1.6rem;
+}
+.main__subscribe-authorize img {
+  width: 27rem;
+  height: 27rem;
+  position: absolute;
+  top: 8rem;
+  left: 80rem;
+}
+
+footer {
+  background: rgb(234, 234, 234);
+}
+footer .footer-container {
+  padding: 8rem 0rem;
+}
+footer .footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+footer .footer-top .item_link {
+  text-decoration: none;
+  display: flex;
+  gap: 6rem;
+}
+footer .footer-top .item_link a {
+  color: rgb(96, 96, 96);
+}
+footer .footer-bottom {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-bottom p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: rgb(96, 96, 96);
+}
+footer .footer-bottom .social {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.main__downloadApp-mobile {
+  display: none;
+}
+
+.sign-up {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  position: absolute;
+}
+.sign-up .sign-up__wrapper {
+  border: 1px solid black;
+  width: 90rem;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize {
+  background-color: white;
+  padding: 1.5rem;
+  width: 50%;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .btn-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .btn-socials button {
+  cursor: pointer;
+  width: 14rem;
+  height: 4.3rem;
+  border: none;
+  outline: none;
+  border-radius: 1.3rem;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .wordPrefix {
+  text-align: center;
+  font-weight: 500;
+  color: rgba(0, 90, 100, 0.35);
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .inputs .inputContainer {
+  position: relative;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .inputs .fullname::before {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  background-size: cover;
+  content: "";
+  background-image: url("/img/user.png");
+  width: 2rem;
+  height: 2rem;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .inputs .email::before {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  background-size: cover;
+  content: "";
+  background-image: url("/img/email.png");
+  width: 2.5rem;
+  height: 2rem;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .inputs .pass::before {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  background-size: cover;
+  content: "";
+  background-image: url("/img/letter.png");
+  width: 2rem;
+  height: 2.4rem;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .inputs input {
+  width: 100%;
+  background: rgb(245, 245, 245);
+  border: none;
+  outline: none;
+  border-radius: 1.4rem;
+  padding: 2rem 5rem;
+  color: rgb(96, 96, 96);
+  opacity: 0.5;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .sign {
+  background: rgb(108, 95, 188);
+  border: none;
+  outline: none;
+  color: rgb(249, 249, 249);
+  border-radius: 1.5rem;
+  width: 27.8rem;
+  height: 6rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .text {
+  font-size: 1.5rem;
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .sign-up-form .text a {
+  font-weight: 800;
+  color: rgb(108, 95, 188);
+}
+.sign-up .sign-up__wrapper .sign-up__authorize .privacyText {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  color: rgb(113, 128, 150);
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up .sign-up__wrapper .sign-up__content {
+  padding: 3rem;
+  gap: 2rem;
+  width: 50%;
+  background-color: rgb(108, 95, 188);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-up .sign-up__wrapper .sign-up__content h1,
+.sign-up .sign-up__wrapper .sign-up__content p {
+  color: rgb(249, 249, 249);
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+}
+.sign-up .sign-up__wrapper .sign-up__content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sign-in {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+.sign-in .sign-in__wrapper {
+  border: 1px solid black;
+  width: 90rem;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize {
+  background-color: white;
+  padding: 1.5rem;
+  width: 50%;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .btn-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .btn-socials button {
+  cursor: pointer;
+  width: 14rem;
+  height: 4.3rem;
+  border: none;
+  outline: none;
+  border-radius: 1.3rem;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .wordPrefix {
+  text-align: center;
+  font-weight: 500;
+  color: rgba(0, 90, 100, 0.35);
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .inputs .inputContainer {
+  position: relative;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .inputs .fullname::before {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  background-size: cover;
+  content: "";
+  background-image: url("/img/user.png");
+  width: 2rem;
+  height: 2rem;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .inputs .email::before {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  background-size: cover;
+  content: "";
+  background-image: url("/img/email.png");
+  width: 2.5rem;
+  height: 2rem;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .inputs .pass::before {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  background-size: cover;
+  content: "";
+  background-image: url("/img/letter.png");
+  width: 2rem;
+  height: 2.4rem;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .inputs input {
+  width: 100%;
+  background: rgb(245, 245, 245);
+  border: none;
+  outline: none;
+  border-radius: 1.4rem;
+  padding: 2rem 5rem;
+  color: rgb(96, 96, 96);
+  opacity: 0.5;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .sign {
+  background: rgb(108, 95, 188);
+  border: none;
+  outline: none;
+  color: rgb(249, 249, 249);
+  border-radius: 1.5rem;
+  width: 27.8rem;
+  height: 6rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .text {
+  font-size: 1.5rem;
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .sign-in-form .text a {
+  font-weight: 800;
+  color: rgb(108, 95, 188);
+}
+.sign-in .sign-in__wrapper .sign-in__authorize .privacyText {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  color: rgb(113, 128, 150);
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in .sign-in__wrapper .sign-in__content {
+  padding: 3rem;
+  gap: 2rem;
+  width: 50%;
+  background-color: rgb(108, 95, 188);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-in .sign-in__wrapper .sign-in__content h1,
+.sign-in .sign-in__wrapper .sign-in__content p {
+  color: rgb(249, 249, 249);
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
+}
+.sign-in .sign-in__wrapper .sign-in__content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
